@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('expenses', function (Blueprint $table) {
             $table->id();
             $table->enum('category', ["Groceries" , "Leisure" , "Electronics", "Utilities", "Clothing", "Health", "Others"]);
-            $table->string('title')
+            $table->string('title');
             $table->float('amount');
             $table->string('details');
             $table->date('date');
